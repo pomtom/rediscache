@@ -1,0 +1,83 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\pramodl\\source\\repos\\RedisApp\\RedisApp.Api\\RedisApp.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\pramodl\\source\\repos\\RedisApp\\RedisApp.Api\\RedisApp.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pramodl\\source\\repos\\RedisApp\\RedisApp.Api\\RedisApp.Api.csproj",
+        "projectName": "RedisApp.Api",
+        "projectPath": "C:\\Users\\pramodl\\source\\repos\\RedisApp\\RedisApp.Api\\RedisApp.Api.csproj",
+        "packagesPath": "C:\\Users\\pramodl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pramodl\\source\\repos\\RedisApp\\RedisApp.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pramodl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://btlteamcity:7990/NuGetServer/nuget": {},
+          "http://btlteamcity:8080/guestAuth/app/nuget/v1/FeedService.svc/": {},
+          "http://btlteamcity:8080/httpAuth/app/nuget/v1/FeedService.svc/": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/3KAJTXBP2LBh7S8gSeGugjBWrR9o4qO8BDFU1tVh1aN5njYBAA/api": {},
+          "https://nuget.devexpress.com/XlHXb4caZGcbMmySj9iyUbSGjnibYA6OrrdEyWO32S3ilgLAmD/api": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.2.62, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
