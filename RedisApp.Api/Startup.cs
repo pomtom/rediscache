@@ -10,6 +10,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using RedisApp.Api.Service;
 using StackExchange.Redis;
+using StackExchange.Redis.Extensions.Core.Configuration;
+using StackExchange.Redis.Extensions.Newtonsoft;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,18 +31,28 @@ namespace RedisApp.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<IConnectionMultiplexer>(a => ConnectionMultiplexer.Connect(Configuration.GetValue<string>("RedisConnection")));
+            services.AddSingleton<IConnectionMultiplexer>(a => 
+            ConnectionMultiplexer.Connect(Configuration.GetValue<string>("RedisConnection"))
+            );
             
             services.AddSingleton<ICacheService, InMemoryCache>();
             services.AddSingleton<ICacheService, RedisCacheService>();
             
             services.AddControllers();
+
+            services.AddMemoryCache();
+
+            services.AddStackExchangeRedisExtensions<NewtonsoftSerializer>(option =>
+            {
+                return Configuration.GetSection("Redis").Get<RedisConfiguration>();
+            });
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "RedisApp.Api", Version = "v1" });
             });
 
-            services.AddMemoryCache();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
