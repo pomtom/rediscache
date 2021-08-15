@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "age": 22,
+    "name": "Pramod Lawate",
+    "contact": {
+      "address": "Maharashtra, Solapur, Sangola",
+      "phone": "+919096534589"
+    }
+  },
+  {
+    "id": 2,
+    "age": 20,
+    "name": "Abhilash",
+    "contact": {
+      "address": "Mumbai, Solapur, Sangola",
+      "phone": "+91963258741"
+    }
+  },
+  {
+    "id": 3,
+    "age": 21,
+    "name": "Ganesh",
+    "contact": {
+      "address": "Maharashtra, Solapur, Sangola",
+      "phone": "+91789654123"
+    }
+  },
+  {
+    "id": 4,
+    "age": 22,
+    "name": "Nev",
+    "contact": {
+      "address": "Sangola",
+      "phone": "+9185245698"
+    }
+  },
+  {
+    "id": 5,
+    "age": 23,
+    "name": "Sanya",
+    "contact": {
+      "address": "Maharashtra, Solapur, Sangola",
+      "phone": "+919096534589"
+    }
+  },
+  {
+    "id": 6,
+    "age": 22,
+    "name": "Venkat",
+    "contact": {
+      "address": "Karnataka",
+      "phone": "+919096534589"
+    }
+  },
+  {
+    "id": 7,
+    "age": 18,
+    "name": "Delhi Boy",
+    "contact": {
+      "address": "Delhi",
+      "phone": "+91854796321"
+    }
+  },
+  {
+    "id": 8,
+    "age": 17,
+    "name": "Vishwas",
+    "contact": {
+      "address": "Dolakhpur",
+      "phone": "+91989653214"
+    }
+  },
+  {
+    "id": 9,
+    "age": 10,
+    "name": "Saniyal",
+    "contact": {
+      "address": "Manglore",
+      "phone": "+9197854213"
+    }
+  },
+  {
+    "id": 10,
+    "age": 22,
+    "name": "Shweta",
+    "contact": {
+      "address": "Shipley",
+      "phone": "+44056874512"
+    }
+  },
+  {
+    "id": 11,
+    "age": 33,
+    "name": "Dhiraj",
+    "contact": {
+      "address": "Braford",
+      "phone": "+4485647123"
+    }
+  }
+
+]
